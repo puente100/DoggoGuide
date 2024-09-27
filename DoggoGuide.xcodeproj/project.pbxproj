@@ -11,6 +11,10 @@
 		ED7B028D2C8D5A5E000A7B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B028C2C8D5A5E000A7B39 /* ContentView.swift */; };
 		ED7B028F2C8D5A60000A7B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7B028E2C8D5A60000A7B39 /* Assets.xcassets */; };
 		ED7B02922C8D5A60000A7B39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7B02912C8D5A60000A7B39 /* Preview Assets.xcassets */; };
+		ED7B02A22C8D5FF6000A7B39 /* DogBreedsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B02A12C8D5FF6000A7B39 /* DogBreedsResponse.swift */; };
+		ED9A1D8F2CA74A4600B5B50D /* DogAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A1D8E2CA74A4600B5B50D /* DogAPIService.swift */; };
+		ED9A1D912CA74F3800B5B50D /* DogBreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A1D902CA74F3800B5B50D /* DogBreedsViewModel.swift */; };
+		ED9A1D942CA7543300B5B50D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ED9A1D932CA7543300B5B50D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		ED7B028C2C8D5A5E000A7B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED7B028E2C8D5A60000A7B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED7B02912C8D5A60000A7B39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED7B02A12C8D5FF6000A7B39 /* DogBreedsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsResponse.swift; sourceTree = "<group>"; };
+		ED9A1D8E2CA74A4600B5B50D /* DogAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIService.swift; sourceTree = "<group>"; };
+		ED9A1D902CA74F3800B5B50D /* DogBreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9A1D942CA7543300B5B50D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +59,13 @@
 		ED7B02892C8D5A5E000A7B39 /* DoggoGuide */ = {
 			isa = PBXGroup;
 			children = (
+				ED7B02982C8D5B1B000A7B39 /* Models */,
+				ED7B02992C8D5B2B000A7B39 /* Views */,
+				ED7B029A2C8D5B39000A7B39 /* ViewModel */,
 				ED7B028A2C8D5A5E000A7B39 /* DoggoGuideApp.swift */,
 				ED7B028C2C8D5A5E000A7B39 /* ContentView.swift */,
 				ED7B028E2C8D5A60000A7B39 /* Assets.xcassets */,
+				ED7B029B2C8D5ED7000A7B39 /* Network */,
 				ED7B02902C8D5A60000A7B39 /* Preview Content */,
 			);
 			path = DoggoGuide;
@@ -65,6 +77,37 @@
 				ED7B02912C8D5A60000A7B39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED7B02982C8D5B1B000A7B39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED7B02A12C8D5FF6000A7B39 /* DogBreedsResponse.swift */,
+				ED9A1D8E2CA74A4600B5B50D /* DogAPIService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED7B02992C8D5B2B000A7B39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED7B029A2C8D5B39000A7B39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED9A1D902CA74F3800B5B50D /* DogBreedsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED7B029B2C8D5ED7000A7B39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = DoggoGuide;
+			packageProductDependencies = (
+				ED9A1D932CA7543300B5B50D /* Alamofire */,
+			);
 			productName = DoggoGuide;
 			productReference = ED7B02872C8D5A5E000A7B39 /* DoggoGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,9 @@
 				Base,
 			);
 			mainGroup = ED7B027E2C8D5A5E000A7B39;
+			packageReferences = (
+				ED9A1D922CA7543300B5B50D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = ED7B02882C8D5A5E000A7B39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +188,9 @@
 			files = (
 				ED7B028D2C8D5A5E000A7B39 /* ContentView.swift in Sources */,
 				ED7B028B2C8D5A5E000A7B39 /* DoggoGuideApp.swift in Sources */,
+				ED9A1D912CA74F3800B5B50D /* DogBreedsViewModel.swift in Sources */,
+				ED7B02A22C8D5FF6000A7B39 /* DogBreedsResponse.swift in Sources */,
+				ED9A1D8F2CA74A4600B5B50D /* DogAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED9A1D922CA7543300B5B50D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED9A1D932CA7543300B5B50D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED9A1D922CA7543300B5B50D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED7B027F2C8D5A5E000A7B39 /* Project object */;
 }

@@ -5,9 +5,9 @@
 //  Created by Daniel Puente on 9/27/24.
 //
 
-
 import Alamofire
 import Combine
+import Foundation
 
 class DogAPIService {
     // URL base para la API de perros
@@ -20,7 +20,7 @@ class DogAPIService {
         // Utilizamos Future para convertir el resultado en un Publisher
         return Future<[String], Error> { promise in
             // Realizamos la solicitud usando Alamofire
-            AF.request(url).responseDecodable(of: BreedsResponse.self) { response in
+            AF.request(url).responseDecodable(of: DogBreedsResponse.self) { response in
                 switch response.result {
                 case .success(let breedsResponse):
                     // Extraemos las razas del mensaje y las pasamos al publisher
