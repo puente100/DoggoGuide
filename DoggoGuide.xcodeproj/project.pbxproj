@@ -63,7 +63,6 @@
 				ED7B02992C8D5B2B000A7B39 /* Views */,
 				ED7B029A2C8D5B39000A7B39 /* ViewModel */,
 				ED7B028A2C8D5A5E000A7B39 /* DoggoGuideApp.swift */,
-				ED7B028C2C8D5A5E000A7B39 /* ContentView.swift */,
 				ED7B028E2C8D5A60000A7B39 /* Assets.xcassets */,
 				ED7B029B2C8D5ED7000A7B39 /* Network */,
 				ED7B02902C8D5A60000A7B39 /* Preview Content */,
@@ -91,6 +90,7 @@
 		ED7B02992C8D5B2B000A7B39 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED7B028C2C8D5A5E000A7B39 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
