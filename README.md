@@ -33,10 +33,10 @@ Combine Usage
 DoggoGuide uses Combine to handle data flow and update the UI in real time. Here's a simple example:
 
 Fetching the list of dog breeds:
-swift
-func fetchBreeds() -> AnyPublisher<[String], Error> {
+
+
+    func fetchBreeds() -> AnyPublisher<[String], Error> {
     let url = "\(baseURL)/breeds/list/all"
-    
     return Future<[String], Error> { promise in
         AF.request(url).responseDecodable(of: DogBreedsResponse.self) { response in
             switch response.result {
@@ -50,15 +50,17 @@ func fetchBreeds() -> AnyPublisher<[String], Error> {
     }
     .receive(on: DispatchQueue.main)
     .eraseToAnyPublisher()
-}
+    }
+
 Combine is used to manage asynchronous API requests.
 The AnyPublisher ensures the data flows back into the app and updates the UI in real-time.
-Reactive UI updates with Combine:
-swift
+Reactive UI updates with Combine
 
+```
 @Published var breeds: [String] = []
 @Published var selectedBreedImage: String?
 @Published var errorMessage: String?
+```
 The @Published properties allow SwiftUI to automatically refresh the UI when the data changes.
 Technologies Used
 SwiftUI: For building the user interface.
