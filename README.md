@@ -13,7 +13,7 @@ Installation
 1. Clone the repository
 bash
 Copy code
-git clone https://github.com/yourusername/doggoguide.git
+git clone https://github.com/puente100/doggoguide.git
 2. Open the project in Xcode
 bash
 Copy code
@@ -29,11 +29,11 @@ Choose the latest version.
 Select a simulator or device in Xcode.
 Click the Run button (Cmd + R) to build and run the app.
 Combine Usage
+
 DoggoGuide uses Combine to handle data flow and update the UI in real time. Here's a simple example:
 
 Fetching the list of dog breeds:
 swift
-Copy code
 func fetchBreeds() -> AnyPublisher<[String], Error> {
     let url = "\(baseURL)/breeds/list/all"
     
@@ -55,7 +55,7 @@ Combine is used to manage asynchronous API requests.
 The AnyPublisher ensures the data flows back into the app and updates the UI in real-time.
 Reactive UI updates with Combine:
 swift
-Copy code
+
 @Published var breeds: [String] = []
 @Published var selectedBreedImage: String?
 @Published var errorMessage: String?
