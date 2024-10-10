@@ -39,11 +39,14 @@ struct DogBreedsView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height: 300)
+                                .cornerRadius(80)
                         case .failure:
                             Image(systemName: "xmark.octagon")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 300, height: 300)
+                                .cornerRadius(80)
+
                         @unknown default:
                             EmptyView()
                         }
@@ -52,7 +55,7 @@ struct DogBreedsView: View {
             }
             .navigationTitle("Dog Breeds")
             .onAppear {
-                viewModel.loadBreeds()  // Cargar la lista de razas cuando la vista aparezca
+                viewModel.loadBreeds()  
             }
         }
     }

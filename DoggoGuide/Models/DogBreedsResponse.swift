@@ -15,6 +15,6 @@ struct DogBreedsResponse: Codable {
 
 // Modelo para la imagen de una raza
 struct BreedImage: Codable {
-    let message: String  // URL de la imagen de la raza
+    let message: String  
     let status: String
 }
