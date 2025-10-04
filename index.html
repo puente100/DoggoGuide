@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoggoGuide — Support</title>
+  <meta name="description" content="DoggoGuide Support • Help, FAQ, Privacy Policy, and Contact" />
+  <style>
+    :root{
+      --bg:#0f1115;--card:#161a22;--text:#e6e7eb;--muted:#a9afc1;--brand:#7dd3fc;--accent:#60a5fa;--ok:#34d399;--bad:#fb7185;--warn:#fbbf24;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:960px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:0 4px 24px rgba(96,165,250,.25)}
+    h1{font-size:clamp(24px,3.2vw,34px);margin:0}
+    .subtitle{color:var(--muted);margin-top:4px}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border:1px solid #263041;border-radius:999px;background:#111522;color:var(--text)}
+    main{display:grid;gap:16px}
+    section{background:var(--card);border:1px solid #202635;border-radius:16px;padding:20px}
+    h2{margin:.2rem 0 1rem;font-size:1.25rem}
+    .k{display:inline-block;padding:.15rem .5rem;border-radius:6px;background:#111522;border:1px solid #263041;color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em}
+    ul{padding-left:1.2rem;margin:.2rem 0}
+    li{margin:.25rem 0}
+    .badge{font-size:.8rem;border-radius:6px;padding:.15rem .4rem;border:1px solid #2a3344;background:#121827;color:var(--muted)}
+    .grid{display:grid;gap:12px}
+    @media(min-width:820px){.grid{grid-template-columns:1fr 1fr}}
+    footer{margin-top:28px;color:var(--muted);text-align:center}
+    .muted{color:var(--muted)}
+    .callout{border-left:3px solid var(--accent);padding-left:12px;margin:.5rem 0;color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #2a3344;background:#111827;color:var(--text)}
+    .btn:hover{background:#0f1725}
+    .pill{display:inline-flex;gap:8px;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>DoggoGuide — Support</h1>
+          <div class="subtitle">Help • FAQ • Privacy Policy • Contact</div>
+        </div>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#support">Support</a>
+        <a href="#faq">FAQ</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#data-deletion">Data Deletion</a>
+        <a href="#terms">Terms</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="support">
+        <h2>Support</h2>
+        <p>Welcome to the DoggoGuide support page. Here you’ll find answers to common questions, known issues, privacy details, and how to contact us for help.</p>
+        <p class="callout"><span class="badge">App</span> <strong>DoggoGuide</strong> • Version: 1.0 • Platform: iOS • Last updated: <time datetime="2025-10-04">Oct 4, 2025</time></p>
+        <p>
+          You can also open a ticket on GitHub if you prefer:
+          <a class="btn" href="#" aria-disabled="true" title="Set your repository issues URL">Open GitHub Issue</a>
+          <span class="muted pill">(replace with your repo URL)</span>
+        </p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <div class="grid">
+          <div>
+            <p><strong>Does DoggoGuide work offline?</strong><br><span class="muted">DoggoGuide requires an internet connection to fetch breed lists and images from the Dog CEO API.</span></p>
+            <p><strong>Where do images come from?</strong><br><span class="muted">Images are provided by the public <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener">Dog CEO API</a>.</span></p>
+            <p><strong>Do you track me or collect personal data?</strong><br><span class="muted">No. DoggoGuide does not collect personal information. See the Privacy section below.</span></p>
+          </div>
+          <div>
+            <p><strong>Which iOS version is supported?</strong><br><span class="muted">iOS 14 or later. We recommend the latest iOS for the best experience.</span></p>
+            <p><strong>How can I request a feature?</strong><br><span class="muted">Send us an email or open a GitHub issue with details of the feature you’d like.</span></p>
+            <p><strong>Is there a cost?</strong><br><span class="muted">DoggoGuide is free. No subscriptions, no ads.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="troubleshooting">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>Images not loading?</strong> Check your internet connection and try again. If the issue persists, the Dog CEO API might be experiencing downtime.</li>
+          <li><strong>App shows an error message?</strong> Close and reopen the app. If the problem continues, contact support and include your iOS version and device model.</li>
+          <li><strong>Slow performance?</strong> Ensure you are on Wi‑Fi or a stable cellular network.</li>
+        </ul>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>DoggoGuide respects your privacy. We do not collect, store, or sell personal information. The app fetches public data (breed lists and images) from the external <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener">Dog CEO API</a>.</p>
+        <ul>
+          <li><strong>Data we collect:</strong> None. DoggoGuide does not collect personally identifiable information (PII).</li>
+          <li><strong>Third‑party services:</strong> Dog CEO API provides public dog images and breed data. Requests to that service may include your IP address as part of normal internet communication.</li>
+          <li><strong>Crash/Analytics:</strong> Not collected in the current version.</li>
+          <li><strong>Children’s Privacy:</strong> DoggoGuide is general‑audience content and does not target children under 13.</li>
+        </ul>
+        <p>If our data practices change, we will update this page and the in‑app disclosures.</p>
+      </section>
+
+      <section id="data-deletion">
+        <h2>Data Deletion</h2>
+        <p>DoggoGuide does not create user accounts nor store personal data on our servers. If you emailed us and wish to delete your message or any related data, contact us and we will delete it from our inbox.</p>
+      </section>
+
+      <section id="terms">
+        <h2>Terms of Use</h2>
+        <ul>
+          <li>Dog images and breed information are provided “as is” from the Dog CEO API. We do not guarantee accuracy or availability.</li>
+          <li>You agree to use DoggoGuide for lawful purposes only.</li>
+          <li>DoggoGuide is provided without warranties of any kind, to the maximum extent permitted by law.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>For support, feedback, or data requests, reach out via:</p>
+        <ul>
+          <li>Email: <a href="mailto:hello@example.com">hello@example.com</a> <span class="muted">(replace with your contact)</span></li>
+          <li>GitHub: <a href="#" title="Set your repository URL">Project repository</a> <span class="muted">(optional)</span></li>
+        </ul>
+        <p class="muted">Developer: Eduardo Daniel Puente Santos</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="y"></span> DoggoGuide. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
